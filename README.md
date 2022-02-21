@@ -1,6 +1,5 @@
-# AceBook
+<img src="https://github.com/chris-clement/acebook-betterverse/blob/main/app/assets/images/README_images/acebookLogo.jpeg?raw=true" width="250" height="60" />
 
-<!-- Acebook Logo -->
 
 ## About the Project
 

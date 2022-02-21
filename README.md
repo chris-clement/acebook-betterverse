@@ -1,47 +1,100 @@
 # AceBook
 
-# Default users (remember to use .save after each entry)
+<!-- Acebook Logo -->
 
-user1 = User.new(name: "Tomas Garcia", email:"tom@gmail
-.com", password: "1234")
-user1.save
+## About the Project
 
-user2 = User.new(name: "Ezekiel Kassim", email:"ez@g
-mail.com", password: "1234")
-user2.save
+This is a Facebook clone made as part of the Makers Academy.
 
-post1 = Post.new(users_id: 1, content: "Just watched spiderman")
-post1.save
-post2 = Post.new(users_id: 2, content: "Time to code")
-post2.save
+This site allows users sign up, login, create Photo posts with text, Like/Unlike posts and add comments to posts. Further details are shown below. 
 
-comment1 = Comment.new(users_id: 2, posts_id: 1, content: "Batman was better")
-comment1.save
-comment2 = Comment.new(users_id: 1, posts_id: 1, content: "True, I agree")
-comment2.save
-comment3 = Comment.new(users_id: 2, posts_id: 1, content: "Thoughts on superman?")
-comment3.save 
-comment4 = Comment.new(users_id: 1, posts_id: 2, content: "What will you make?")
-comment4.save
-comment5 = Comment.new(users_id: 2, posts_id: 2, content: "The betterverse")
-comment5.save
-comment6 = Comment.new(users_id: 1, posts_id: 1, content: "Great film!")
-comment6.save
-comment7 = Comment.new(users_id: 1, posts_id: 2, content: "Sounds like fun!")
-comment7.save
+Created from start to finish in 2 weeks using [Ruby on Rails](https://rubyonrails.org/), [SQLite](https://www.sqlite.org/index.html)
 
-## Quickstart
+## Getting Started
 
-First, clone this repository. Then:
+### Prerequisites 
 
-```bash
-> bundle install
-> bin/rails db:create
-> bin/rails db:migrate
+- [Ruby 3.0.2](https://www.ruby-lang.org/en/documentation/installation/)
+- [RVM](https://rvm.io/)
+- [Bundler](https://bundler.io/)
 
-> bundle exec rspec # Run the tests to ensure it works
-> bin/rails server # Start the server at localhost:3000
-```
+### Installation
+
+1. Make sure prerequisites are installed.
+2. Clone the repo
+
+````
+git clone https://github.com/chris-clement/acebook-betterverse.git
+````
+3. cd into the directory
+
+````
+cd acebook-betterverse
+````
+
+4. Ensure you use version 3.0.2 of Ruby
+
+````
+rvm 3.0.2
+````
+
+5. Install Gemfile packages
+
+````
+bundle install
+````
+
+6. Create the databases
+
+````
+bin/rails db:create
+bin/rails db:migrate
+````
+
+7. Run the server
+
+````
+bin/rails server
+````
+
+8. Visit the locally hosted website
+
+````
+bin/rails db:create
+bin/rails db:migrate
+````
+
+### What you should see
+
+<!-- Insert image of homepage -->
+
+### Testing
+
+Tests use [RSpec](https://rspec.info/)
+
+````
+bundle exec rspec
+````
+## Usage
+
+### Signing Up
+
+### Logging In
+
+### Create a Post
+
+### Like a Post
+
+### Comment on a Post
+
+### Search for Posts
+
+### Search for Friends Post's
+
+### Profile Page
+
+
+
 
 ## Troubleshooting
 
@@ -53,4 +106,3 @@ ExecJS::RuntimeUnavailable:
 ```
 
 Rails requires a Javascript runtime to work. The easiest way is to install Node by running `brew install node` - and then run `bundle exec rspec` again.
-test

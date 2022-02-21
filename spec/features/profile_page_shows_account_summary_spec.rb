@@ -17,7 +17,7 @@ RSpec.feature "Profile Page", type: :feature do
     fill_in "post_content", with: "Hello, world!"
     click_button "Create Post"
     click_button "Like"
-    click_link "Go to your profile"
+    click_link "Profile"
     expect(page).to have_content "Total Likes: 1"
   end
 
@@ -36,7 +36,7 @@ RSpec.feature "Profile Page", type: :feature do
     click_link "Create new post"
     fill_in "post_content", with: "Hello, world!"
     click_button "Create Post"
-    click_link "Go to your profile"
+    click_link "Profile"
     expect(page).to have_content "Total Posts: 1"
   end
 end

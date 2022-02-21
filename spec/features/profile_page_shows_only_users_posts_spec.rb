@@ -16,7 +16,7 @@ RSpec.feature "Profile Page", type: :feature do
     click_link "Create new post"
     fill_in "post_content", with: "Hello, world!"
     click_button "Create Post"
-    click_link "Go to your profile"
+    click_link "Profile"
     expect(page).to have_content "Comments Section", count: 1
   end
   scenario "A users profile page shows only a users posts with multiple posts" do
@@ -37,7 +37,7 @@ RSpec.feature "Profile Page", type: :feature do
     click_link "Create new post"
     fill_in "post_content", with: "Hello again!"
     click_button "Create Post"
-    click_link "Go to your profile"
+    click_link "Profile"
     expect(page).to have_content "Comments Section", count: 2
   end
 end

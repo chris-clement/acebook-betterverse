@@ -18,7 +18,7 @@ RSpec.feature "Editing Posts", type: :feature do
     click_button "Create Post"
     click_link "Edit Post"
     fill_in "post_content", with: "Goodbye, world!"
-    click_button "Submit"
+    click_button "Update Post"
     expect(page).to have_content "Goodbye, world!"
   end
 end

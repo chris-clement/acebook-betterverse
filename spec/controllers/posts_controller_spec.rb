@@ -2,17 +2,17 @@ require 'rails_helper'
 
 RSpec.describe PostsController, type: :controller do
   describe "GET /new " do
-    it "responds with 200" do
+    it "responds with 302 as a user is not logged in" do
       get :new
-      expect(response).to have_http_status(200)
+      expect(response).to have_http_status(302)
+    end
+    it "redirect to login page as not logged in" do
+      get :new
+      expect(response).to redirect_to('/homepage')
     end
   end
 
   describe "POST /" do
-    it "redirects to posts" do
-      post :create, params: { post: { content: "Hello, world!", users_id: 1 } }
-      expect(response).to redirect_to('/')
-    end
 
     it "creates a post" do
       user = User.create(name: 'chris', email: 'chris@gmail.com', password: '123456')

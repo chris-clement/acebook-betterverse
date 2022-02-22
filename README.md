@@ -7,7 +7,7 @@ This is a Facebook clone made as part of the Makers Academy.
 
 This site allows users sign up, login, create Photo posts with text, Like/Unlike posts and add comments to posts. Further details are shown below. 
 
-Created from start to finish in 2 weeks using [Ruby on Rails](https://rubyonrails.org/), [SQLite](https://www.sqlite.org/index.html)
+Created from start to finish in 2 weeks using [Ruby on Rails](https://rubyonrails.org/) with [SQLite](https://www.sqlite.org/index.html) being used as the database.
 
 ## Getting Started
 
@@ -16,6 +16,7 @@ Created from start to finish in 2 weeks using [Ruby on Rails](https://rubyonrail
 - [Ruby 3.0.2](https://www.ruby-lang.org/en/documentation/installation/)
 - [RVM](https://rvm.io/)
 - [Bundler](https://bundler.io/)
+- [Node](https://nodejs.org/en/)
 
 ### Installation
 
@@ -65,43 +66,81 @@ bin/rails db:migrate
 
 ### What you should see
 
-<!-- Insert image of homepage -->
+<img src="app/assets/images/README_images/homePage.jpeg"/>
 
 ### Testing
 
 Tests use [RSpec](https://rspec.info/)
 
+
 ````
 bundle exec rspec
 ````
+
+All tests should pass.
+
 ## Usage
 
 ### Signing Up
 
+Fill in your details on the sign up page. Checks are in place that the email is not already in use and the password is an appropriate length. 
+
+<img src="app/assets/images/README_images/signUpPage.jpeg"/>
+
 ### Logging In
+
+After succesfully signing up, login with your details.
+
+<img src="app/assets/images/README_images/logInPage.jpeg"/>
+
+This will take you to your feed page.
+
+<img src="app/assets/images/README_images/feedPage.jpeg"/>
 
 ### Create a Post
 
-### Like a Post
+Let's create a Post. Click on Create new post.
+
+<img src="app/assets/images/README_images/createPost.jpeg"/>
+
+It now appears on your feed.
+
+<img src="app/assets/images/README_images/feedWithPost.jpeg"/>
 
 ### Comment on a Post
 
+You can comment on any Post
+
+<img src="app/assets/images/README_images/addComment.jpeg"/>
+
+### Like a Post
+
+You can also Like and subsequently unlike a post if you change your mind.
+
+<img src="app/assets/images/README_images/likePost.jpeg"/>
+
+### Edit/Delete
+
+Note in the above screenshots every post you make can be edited/deleted. This is the same for comments.
+
+There are controls in place to ensure you cannot edit/delete other people's comments/posts.
+
+
 ### Search for Posts
 
-### Search for Friends Post's
+Once your feed has many posts you can search for a specific post which will filter the results
+
+<img src="app/assets/images/README_images/searchPosts.jpeg"/>
+
+### Search for Friend's Posts
+
+You can search for a Friend's Posts based on their name. For instance if I wanted to see all of Bruce's posts I would search like the below. 
+
+<img src="app/assets/images/README_images/searchFriends.jpeg"/>
+
 
 ### Profile Page
 
+Click on your profile in the Nav Bar to access a summary of your total number of posts and received likes. It also filters for all of your own Posts.
 
-
-
-## Troubleshooting
-
-If you don't have Node.js installed yet, you might run into this error when running rspec:
-
-```
-ExecJS::RuntimeUnavailable:
-  Could not find a JavaScript runtime. See https://github.com/rails/execjs for a list of available runtimes.
-```
-
-Rails requires a Javascript runtime to work. The easiest way is to install Node by running `brew install node` - and then run `bundle exec rspec` again.
+<img src="app/assets/images/README_images/profilePage.jpeg"/>

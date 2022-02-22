@@ -21,43 +21,43 @@ Created from start to finish in 2 weeks using [Ruby on Rails](https://rubyonrail
 ### Installation
 
 1. Make sure prerequisites are installed.
-2. Clone the repo
+2. Clone the repo.
 
 ````
 git clone https://github.com/chris-clement/acebook-betterverse.git
 ````
-3. cd into the directory
+3. cd into the directory.
 
 ````
 cd acebook-betterverse
 ````
 
-4. Ensure you use version 3.0.2 of Ruby
+4. Ensure you use version 3.0.2 of Ruby.
 
 ````
 rvm 3.0.2
 ````
 
-5. Install Gemfile packages
+5. Install Gemfile packages.
 
 ````
 bundle install
 ````
 
-6. Create the databases
+6. Create the databases.
 
 ````
 bin/rails db:create
 bin/rails db:migrate
 ````
 
-7. Run the server
+7. Run the server.
 
 ````
 bin/rails server
 ````
 
-8. Visit the locally hosted website
+8. Visit the locally hosted website.
 
 ````
 bin/rails db:create
@@ -109,7 +109,7 @@ It now appears on your feed.
 
 ### Comment on a Post
 
-You can comment on any Post
+You can comment on any Post.
 
 <img src="app/assets/images/README_images/addComment.jpeg"/>
 
@@ -128,7 +128,7 @@ There are controls in place to ensure you cannot edit/delete other people's comm
 
 ### Search for Posts
 
-Once your feed has many posts you can search for a specific post which will filter the results
+Once your feed has many posts you can search for a specific post which will filter the results.
 
 <img src="app/assets/images/README_images/searchPosts.jpeg"/>
 
